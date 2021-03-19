@@ -1,8 +1,8 @@
-import React from "react";
 import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
 import Home from './routes/Home';
 import Learn from './routes/Learn';
-import Signin from "./routes/Signin";
+import Signin from './routes/Signin';
+import Feed from './routes/Feed';
 
 function App() {
   return (
@@ -17,6 +17,9 @@ function App() {
         <Link className="navbar-item" to="/signin">
           <div>Sign-in</div>
         </Link>
+        <Link className="navbar-item" to="/feed">
+          <div>Sign-in</div>
+        </Link>
       </div>
 
       <div className="container mt-4">
@@ -24,6 +27,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/learn" exact component={Learn} />
           <Route path="/signin" exact component={Signin} />
+          <Route path="/feed" exact component={Feed} />
         </Switch>
       </div>
     </Router>
