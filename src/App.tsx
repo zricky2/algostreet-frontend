@@ -18,7 +18,7 @@ function App() {
           <div>Sign-in</div>
         </Link>
         <Link className="navbar-item" to="/feed">
-          <div>Sign-in</div>
+          <div>Feed</div>
         </Link>
       </div>
 

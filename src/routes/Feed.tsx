@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import PostText from '../components/PostText'
+import Post from '../feedcomponents/Post'
 
 export default function Feed() {
     const [posts, setPosts] = useState();
@@ -9,8 +9,10 @@ export default function Feed() {
 
     return (
         <div>
-            <PostText text = 'pop' />
-            <PostText text = 'hello world' />
+            <Post text = 'pop' />
+            <Post text = 'hello world' />
+            <Post text = 'pop' />
+            <Post text = 'hello world' />
         </div>
     )
 
